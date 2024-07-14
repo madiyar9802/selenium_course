@@ -15,6 +15,7 @@ try:
     browser.get(link)
     image = browser.find_element(By.CSS_SELECTOR, "#treasure")
     x = image.get_attribute("valuex")
+    print(type(x))
     calculated_num = calc(x)
 
     answer = browser.find_element(By.CSS_SELECTOR, "#answer")
